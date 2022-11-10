@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #222222;
+}
+
+#header {
+  padding-top: 30px;
+}
+#header .header {
+  display: flex;
+}
+#header .header--avto h1 {
+  color: white;
+  font-size: 55px;
+}
+#header .header--avto span {
+  color: royalblue;
+}
+#header .header--avto h3 {
+  color: white;
+  font-size: 26px;
+}
+#header .header--car {
+  width: 70px;
+  height: 0;
+  border: 1px solid #592828;
+  transform: rotate(90deg);
+  margin-top: 50px;
+}
+#header .header h4 {
+  font-family: "Open Sans" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2194FF;
+  margin-top: 20px;
+}
+#header .header--cart {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+}
+#header .header--cart a {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F1F1F1;
+}
+#header .header--cart span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #2194FF;
+}
+
+#popo {
+  padding-top: 50px;
+}
+#popo .popo--con {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#popo .popo--how h3 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #F1F1F1;
+}
+#popo .popo--how img {
+  margin-left: 10px;
+}
+#popo .popo--hot {
+  margin-left: 40px;
+}
+#popo .popo--hot h3 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #F1F1F1;
+}
+#popo .popo--hot img {
+  margin-left: 10px;
+}
+#popo .popo--cart {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#popo .popo--car h1 {
+  font-family: "Russo One" sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  color: #2194FF;
+  padding-top: 20px;
+}
+#popo .popo--car p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F1F1F1;
+  padding: 20px 0;
+}
+#popo .popo--car button {
+  background: #2194FF;
+  padding: 15px 50px;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  color: #F1F1F1;
+}
+#popo .popo--car h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #F1F1F1;
+  padding-top: 20px;
+}
+
+#clou {
+  padding-top: 10%;
+}
+#clou .clou h1 {
+  font-family: "Russo One" sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #ffffff;
+}
+#clou .clou .clou--prob {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#clou .clou--car {
+  padding-top: 60px;
+}
+#clou .clou--car h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #36428f;
+  text-align: center;
+}
+#clou .clou--car p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+#clou .clou--car img {
+  margin-left: 40%;
+}
+#clou .clou--cart {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#clou .clou--cart p {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: #ffffff;
+}
+#clou .clou--cart span {
+  color: #36428f;
+}
+#clou .clou--cart button {
+  color: #ffffff;
+  background: #36428f;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  color: #F1F1F1;
+  margin-left: 50%;
+}
+
+#tans {
+  background: rgba(33, 148, 255, 0.24);
+  padding-top: 2%;
+  margin-top: 70px;
+}
+#tans .tans h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #2194FF;
+}
+#tans .tans--haw {
+  margin-left: 28%;
+  padding-top: 20px;
+}
+#tans .tans--haw button {
+  background: rgba(241, 241, 241, 0.2);
+  border-radius: 20px;
+  padding: 8px 35px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #F1F1F1;
+  margin-left: 10px;
+  opacity: 0.7;
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+#tans .swiper {
+  width: 100%;
+  height: 100%;
+}
+#tans .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#tans .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 80px;
+}
+#tans button {
+  margin-left: 40%;
+  padding: 15px 30px;
+  background: #3b3bd0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #F1F1F1;
+  border-radius: 11px;
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=style.css.map */
