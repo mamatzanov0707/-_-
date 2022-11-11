@@ -1,6 +1,6 @@
 $car: red;
 $cara: #36428f;
-$cart: #ffffff;
+$cart: rgba(162, 28, 28, 0.84);
 * {
   padding: 0;
   margin: 0;
@@ -107,9 +107,9 @@ body {
     }
     }
     &--cart{
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        //flex-wrap: wrap;
     }
     &--car{
       h1{
@@ -141,7 +141,11 @@ body {
         color: #F1F1F1;
         padding-top: 20px;
       }
+
     }
+    //img {
+    //  width: 754px;
+    //}
   }
 }
 
@@ -292,5 +296,271 @@ body {
     border-radius: 11px;
     text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.25);
 
+  }
+}
+
+#main{
+  margin-top: 60px;
+  .main{
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    &--car {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      img{
+        margin-left: 20px;
+        margin-top: 60px;
+      }
+      h2{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2194FF;
+        padding-top: 35px;
+
+      }
+      h3{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2D2D2D;
+        padding: 20px 0;
+      }
+      p{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2D2D2D;
+      }
+
+    }
+  }
+}
+
+#item{
+  padding-top: 90px;
+  .item{
+    h1 {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+
+      color: #2194FF;
+
+    }
+
+    .accordion {
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+    .accordion-item {
+      background-color: #fff;
+      color: #111;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+    }
+    .accordion-item-header {
+      padding: 0.5rem 3rem 0.5rem 1rem;
+      min-height: 3.5rem;
+      line-height: 1.25rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+    }
+    .accordion-item-header::after {
+      content: "\002B";
+      font-size: 2rem;
+      position: absolute;
+      right: 1rem;
+    }
+    .accordion-item-header.active::after {
+      content: "\2212";
+    }
+    .accordion-item-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+    .accordion-item-body-content {
+      padding: 1rem;
+      line-height: 1.5rem;
+      border-top: 1px solid;
+      border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    }
+
+    @media(max-width:767px) {
+      html {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+#alt{
+  padding-top: 60px;
+  .alt{
+    display: flex;
+    justify-content: space-around;
+    &--cat {
+      h1 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        color: #F1F1F1;
+      }
+
+      input {
+        padding: 20px 100px;
+        margin-top: 30px;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        color: $cart;
+      }
+
+      .alt--main {
+        padding: 30px 100px;
+        margin-top: 30px;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        color: $cart;
+      }
+
+      button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #F1F1F1;
+        padding: 15px 50px;
+        background: #2194FF;
+        border-radius: 50px;
+        margin-top: 20px;
+      }
+    }
+      &--how {
+    }
+  }
+}
+
+#mos{
+  padding-top: 60px;
+  .mos{
+    &--set{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+#footer{
+  padding-top:40px;
+  .footer{
+    h1{
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+      color: #2194FF;
+    }
+    button{
+      padding: 13px 30px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #F1F1F1;
+      text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.25);
+      background: #2194FF;
+      box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.45);
+      border-radius: 11px;
+      margin-left: 43%;
+      margin-top: 20px;
+    }
+  &--view {
+    display: flex;
+    padding-top: 40px;
+    //flex-wrap: wrap;
+  }
+    &--help {
+      width: 1100px;
+      height: 488px;
+      background: #F1F1F1;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+      h2 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        letter-spacing: 0.05em;
+        color: #2194FF;
+        padding: 30px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+        color: #1B2639;
+        margin-left: 30px;
+
+      }
+
+      .footer--vid {
+        width: 420px;
+        height: 0;
+        border: 1px solid rgba(27, 38, 57, 0.2);
+        margin-left: 30px;
+        margin-top: 20px;
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #2194FF;
+        margin-left: 30px;
+      }
+
+      h3 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #1B2639;
+        margin-left: 30px;
+      }
+    }
+      &--foo{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        flex-wrap: wrap;
+        h4{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          text-decoration-line: underline;
+          color: #F1F1F1;
+        }
+        h5{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          text-decoration-line: underline;
+          color: #F1F1F1;
+        }
+    }
   }
 }
